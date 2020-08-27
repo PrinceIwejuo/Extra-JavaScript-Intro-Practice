@@ -591,6 +591,11 @@ const airports = [
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
 
+function convert(USD){
+  return USD * 0.85
+}
+console.log(convert(23));
+
 
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
@@ -600,10 +605,27 @@ const airports = [
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
 
+function converter(USD){
+  const euro = USD * 0.85;
+  const pounds = USD * 0.77;
+  const lira = USD * 6.96;
+  const lev = USD * 1.66;
+  const hryvnia = USD * 27.7;
+
+  return `Euro ${euro}
+  \n Pounds ${pounds}
+  \n Lira ${lira}
+  \n Lev ${lev}
+  \n Hryvnia ${hryvnia}`
+}
+
+console.log(converter(23));
+
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
+
 
 
 /*TASK 4 🚀 
